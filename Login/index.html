@@ -1,1 +1,57 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f6a633b411.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+    <div class="register">
+      <div class="wrapper">
+        <div class="title">
+          login
+        </div>
+        <div class="form">
+          <form method="post">
+            <div class="inputfield">
+              <label >Email</label>
+              <input type="text" name="user_email" id="user_email" class="input" placeholder="Type here..." required>
+            </div>
+            <div class="inputfield">
+              <label>Password</label>
+              <input type="password" name="user_password" id="user_password" class="input" placeholder="Type here.." required>
+            </div>
+            <div class="inputfield">
+              <label for="selectrole">Select Role:</label>
+              <select name="role" id="selectrole">
+                <option value="">--Please choose an role---</option>
+                <option value="CUSTOMER">CUSTOMER</option>
+                <option value="TRADER">TRADER</option>
+              </select>
+            </div>
+            <div class="inputfield terms">
+              <label class="check">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <p>Remember Me</p>
+            </div>
+            <div class="inputfield">
+              <button type="submit" class="btn" id="login_sumbit" name="login_submit">Login</button>
+            </div>
+          </form>
+          <p class="forget"><a href="#">Forget Password</a></p>
+          <br>
+          <hr>
+          <p>Dont have an account? <a href="#">Register as Customer</a> || <a href="#">Register as trader</a></p>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
